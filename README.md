@@ -62,7 +62,7 @@ python basicsr/test.py -opt ./options/test/ACT/test_act_large.yml  # large image
 
 ## 🚩Results
 
-The inference results on benchmark datasets will be available at [Google Drive](https://drive.google.com/file/d/1ZrAJgGJ3catBCOPX_eTCmjvqUYzoNhIz/view?usp=sharing).
+The inference results on benchmark datasets will be available at [Google Drive](https://drive.google.com/file/d).
 
 ## :mailbox:Contact
 
