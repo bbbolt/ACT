@@ -6,6 +6,7 @@ Qian Wang, Yanyu Mao, Ruilong Guo, Yao Tang, Jing Wei, Bo Quan
 import torch
 import torch.nn as nn
 import torch.nn.functional as F
+from basicsr.utils.registry import ARCH_REGISTRY
 
 
 ###### split image to windows ######
@@ -332,6 +333,7 @@ class RETG(nn.Module):
 
 
 ######  Asymmetric Content-aided Transformer ######
+@ARCH_REGISTRY.register()
 class ACT(nn.Module):
     def __init__(self, rgb_mean, upscale_factor, c_dim=60, reduction=16, Bsc_depth=4, RS_depth=2, RC_depth=0, depth=2,
                  windows_size=16):
