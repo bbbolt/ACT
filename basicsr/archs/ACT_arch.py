@@ -335,7 +335,7 @@ class RETG(nn.Module):
 ######  Asymmetric Content-aided Transformer ######
 @ARCH_REGISTRY.register()
 class ACT(nn.Module):
-    def __init__(self, rgb_mean, upscale_factor, c_dim=60, reduction=16, Bsc_depth=4, RS_depth=2, RC_depth=0, depth=2,
+    def __init__(self, rgb_mean=[0.4488, 0.4371, 0.4040], upscale_factor=4, c_dim=60, reduction=16, Bsc_depth=4, RS_depth=2, RC_depth=0, depth=2,
                  windows_size=16):
         super(ACT, self).__init__()
         self.body = []
@@ -366,7 +366,7 @@ class ACT(nn.Module):
 
 if __name__ == '__main__':
 
-    model = ACT(rgb_mean=(0.4040, 0.4371, 0.4488), upscale_factor=4)
+    model = ACT(rgb_mean=[0.4488, 0.4371, 0.4040], upscale_factor=4)
 
     total_params = sum(p.numel() for p in model.parameters())
     print(f'{total_params:,} total parameters.')
