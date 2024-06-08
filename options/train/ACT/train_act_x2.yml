@@ -44,7 +44,7 @@ datasets:
 # network structures
 network_g:
   type: ACT
-  # upscale: 2
+  upscale_factor: 2
 
 # path
 path:
