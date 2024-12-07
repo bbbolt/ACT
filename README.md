@@ -45,7 +45,9 @@ For more training commands, please check the docs in [BasicSR](https://github.co
 
 ▶️ You can modify the configuration file about the test, which is located in ./options/test/ACT. At the same time, you can change the benchmark datasets and modify the path of the pre-train model. 
 
-▶️ We will publish all ACT and HARN (tiny variant for [NTIRE2024 ESR](https://arxiv.org/abs/2404.10343)) pre-trained models.
+▶️ We have uploaded the pre-train weights for ACT.Please change the path to the corresponding configuration file when testing.
+
+▶️ We will publish HARN (tiny variant for [NTIRE2024 ESR](https://arxiv.org/abs/2404.10343)) pre-trained models.
 
 ```python
 ### Test ###
